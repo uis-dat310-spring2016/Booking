@@ -1,0 +1,233 @@
+@CHARSET "UTF-8";
+
+@font-face {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Raleway'),
+		url(http://fonts.gstatic.com/s/raleway/v9/0dTEPzkLWceF7z0koJaX1A.woff2)
+		format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC,
+		U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Montserrat-Regular'),
+		url(http://fonts.gstatic.com/s/montserrat/v6/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2)
+		format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC,
+		U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+/*  Colors: #FF9900, #424242, 
+#E9E9E9, #BCBCBC, #3299BB */
+a {
+	color: white;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+Body {
+	line-height: 1.7;
+	font-size: 100%;
+	font-weight: 400;
+	font-family: 'Raleway', sans-serif;
+	margin: auto;
+	background-color: white;
+	color: black;
+	word-break: keep-all;
+	overflow: auto;
+}
+
+header {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0 auto;
+	width: 100%;
+	color: white;
+	background-color: #424242;
+	height: 40px;
+	position: fixed;
+	top: 0;
+	overflow: auto;
+	z-index: 999;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	right: 5%;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	margin: -.2em;
+	padding: .3em;
+	display: inline;
+	border-style: solid;
+	border-width: 0 .1em;
+	border-color: white;
+}
+
+a:hover {
+	color: black;
+}
+
+main {
+	min-width: 600px;
+	width: 90%;
+	max-width: 1200px;
+	margin: 100px auto 200px;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2em;
+	padding: 5px;
+	background-color: #BCBCBC;
+	color: white;
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	text-align: center;
+}
+
+article {
+	margin: auto;
+	width: 48%;
+	margin: .5em 0;
+	display: inline-block;
+}
+
+article:hover {
+	color: white;
+	background-color: #424242;
+}
+
+footer {
+	border-style: solid;
+	border-width: 5px 0 0 0;
+	border-color: #424242;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 120px;
+	width: 100%;
+	text-align: center;
+	background-color: #BCBCBC;
+	border-style: solid;
+}
+
+p {
+	margin: .2em;
+	padding: .2em
+}
+
+.box {
+	font-size: .8em;
+	padding: 5px;
+	position: relative;
+	border: 1px solid;
+	overflow: auto;
+}
+
+fieldset {
+	margin: 1em;
+	font-size: .8em;
+	padding: 5px;
+	position: relative;
+	border: 1px solid;
+	min-height: 1.7em;
+}
+
+.checkout span {
+	margin: 0 2em;
+	width: 150px;
+	text-align: right;
+	display: inline-block;
+}
+
+.place img {
+	height: 150px;
+	width: 200px;
+	float: left;
+	padding: .2em;
+}
+
+.place form {
+	position: absolute;
+	bottom: 8px;
+	right: 8px;
+}
+
+.place span {
+	text-align: center;
+	color: black;
+	background-color: #ffffff;
+	opacity: 0.6;
+	position: absolute;
+	bottom: 8px;
+	left: 8px;
+	width: 200px;
+}
+
+.button {
+	background-color: #FF9900;
+	padding: .1em;
+	margin: .1em;
+	outline: double;
+	padding: .1em;
+	position: absolute;
+	bottom: 8px;
+	right: 8px;
+}
+
+.logo {
+	z-index: 999;
+	padding-right: 60px;
+	padding-left: 1em;
+	position: fixed;
+	top: 0;
+	left: 5%;
+	height: 60px;
+	background-color: #3299BB;
+	background-image: url('pic/kath.png');
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-size: 50px;
+	position: fixed;
+}
+
+.contact {
+	position: absolute;
+	font-size: 18px;
+	left: 0%;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+}
+
+.center {
+	text-align: center;
+	position: relative;
+}
+
+.banner {
+	width: 100%;
+	border-style: solid;
+	border-width: 5px 0;
+	border-color: #424242;
+	margin: 0;
+}

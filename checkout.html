@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css" type="text/css">
+<title>Property | HouseKath</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Properties</a></li>
+				<li><a href="property.html">Special deals</a></li>
+				<li><a href="checkout.html">Checkout</a></li>
+			</ul>
+		</nav>
+		<span class="logo">The HouseKath</span>
+	</header>
+	<main>
+	<div class="box">
+		<div class="place">
+			<span class="place">The Middle, No-where</span> <img
+				src="images/property_1.png" alt="snowy cabbin in the woods">
+		</div>
+		<h3>Property 1</h3>
+		<p>A nice place to get lost</p>
+
+	</div>
+	<h1>Checkout</h1>
+	<form class="checkout">
+		<fieldset disabled>
+			<span> Check-in:</span><input type="date" name="checkin"><br>
+			<span>Check-out:</span><input type="date" name="checkout">
+		</fieldset>
+		<fieldset>
+			<span>Name:</span><input type="text" name="name"><br> <span>Street:</span><input
+				type="text" name="street"><br> <span>City:</span><input
+				type="text" name="city"><br> <span>Postcode:</span><input
+				type="text" name="postcode"><br> <span>Country:</span><input
+				list="country">
+			<datalist id="country">
+				<option value="Norway">
+				<option value="Sweden">
+				<option value="Denmark">
+				<option value="UK">
+				<option value="Germany">
+			</datalist>
+		</fieldset>
+		<fieldset>
+			<span>Comment:</span>
+			<textarea name="message" rows="4" cols="30">
+  </textarea>
+		</fieldset>
+		<fieldset class="center">
+			<input type="submit" value="Book property">
+		</fieldset>
+	</form>
+	</main>
+	<footer>
+		<div class="contact">Contact information here</div>
+
+	</footer>
+</body>
+</html>
